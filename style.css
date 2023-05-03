@@ -1,0 +1,79 @@
+body{
+    background-color: #D14D72;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background: #FFF7D4;
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, alpha);
+}
+h1{
+    font-size: 2rem; 
+    /* 2 times the default value
+ */
+    text-align: center;
+    padding-top: 100px;
+
+}
+p{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+
+}
+
+button{
+    border: none;
+    font-size: 3rem;
+    margin: 0 .5rem; /*Will add space between three of them */
+    padding: 0.5rem;
+    cursor: pointer;
+    background-color: blueviolet;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+button:hover{
+    opacity: 0.7;
+}
+#rock{
+    background-color: red;
+}
+#paper{
+    background-color: #2196f3;
+}
+#scissors{
+    background-color: #4caf50;
+}
+
+#user-score{
+    color: #2196f3;
+}
+#computer-score{
+    color: #ff0000;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 80%;
+    }
+}
